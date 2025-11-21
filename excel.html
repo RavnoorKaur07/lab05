@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AWP Lab 5 - Excel Functions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="pastel-theme">
+<header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="excel.html" class="nav-link">Excel</a></li>
+        </ul>
+
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="toggle-theme-excel">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="card">
+        <h1>Excel Functions — AutoSum / Average / Max / Min</h1>
+        <p>Enter numbers separated by spaces (e.g. <code>23 67 98 90</code>).</p>
+
+        <form id="excel-form">
+            <div class="field">
+                <label for="numbers">Your Numbers</label>
+                <input id="numbers" type="text" placeholder="23 67 98 90">
+            </div>
+
+            <fieldset class="membership">
+                <legend>Function</legend>
+                <label><input type="radio" name="excel" id="sum" checked> AutoSum</label>
+                <label><input type="radio" name="excel" id="avg"> Average</label>
+                <label><input type="radio" name="excel" id="max"> Max</label>
+                <label><input type="radio" name="excel" id="min"> Min</label>
+            </fieldset>
+
+            <div class="actions">
+                <button type="button" id="calcBtn" class="btn">Calculate</button>
+                <button type="reset" class="btn ghost">Clear</button>
+            </div>
+
+            <div class="field">
+                <label for="result">Result:</label>
+                <input id="result" type="text" readonly>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+  <p>ILAC • Created by: Arshdeep Singh, Jashanpreet Kaur, Ravnoor Kaur & Kartik Thakur - Javascript Frameworks - Lab 5</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

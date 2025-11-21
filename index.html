@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AWP Lab 5 - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="pastel-theme">
+<header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="excel.html" class="nav-link">Excel</a></li>
+        </ul>
+
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="toggle-theme">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="card">
+        <h1>Welcome — User Information Form</h1>
+        <p>Fill the form and click <strong>Send</strong> to display the details below.</p>
+
+        <form id="main-form" novalidate>
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" required>
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" required>
+            </div>
+
+            <div class="field">
+                <label for="address">Address</label>
+                <input id="address" type="text">
+            </div>
+
+            <div class="field">
+                <label for="city">City</label>
+                <input id="city" type="text">
+            </div>
+
+            <div class="field">
+                <label for="province">Province</label>
+                <input id="province" type="text">
+            </div>
+
+            <fieldset class="membership">
+                <legend>Choose Membership</legend>
+                <label><input type="radio" name="membership" value="Premium" checked> Premium</label>
+                <label><input type="radio" name="membership" value="Standard"> Standard</label>
+                <label><input type="radio" name="membership" value="Basic"> Basic</label>
+            </fieldset>
+
+            <div class="actions">
+                <button type="button" id="sendBtn" class="btn">Send</button>
+                <button type="reset" class="btn ghost">Cancel</button>
+            </div>
+
+            <div id="msg" class="bubble">Submitted!</div>
+        </form>
+
+        <div id="output" class="output card-muted"></div>
+    </section>
+</main>
+
+<footer class="footer">
+  <p>ILAC • Created by: Arshdeep Singh, Jashanpreet Kaur, Ravnoor Kaur & Kartik Thakur - Javascript Frameworks - Lab 5</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
